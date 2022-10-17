@@ -68,12 +68,12 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-lmodroid
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk \
-    $(LOCAL_PATH)/overlay-lineage/packages/apps/Dialer
+    $(LOCAL_PATH)/overlay-lmodroid/lineage-sdk \
+    $(LOCAL_PATH)/overlay-lmodroid/packages/apps/Dialer
 
 # Camera
 PRODUCT_PACKAGES += \
