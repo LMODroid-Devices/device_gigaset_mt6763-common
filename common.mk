@@ -164,13 +164,8 @@ PRODUCT_PACKAGES += \
     fstab.mt6763 \
     ueventd.mt6763.rc
 
-ifeq ($(filter %_GS290 %_yggdrasil,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab_fbe.mt6763:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6763
-else
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab_fde.mt6763:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6763
-endif
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6763:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6763
 
 # Keylayout
 PRODUCT_COPY_FILES += \
